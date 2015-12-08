@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+	<script src="/bower_components/socket.io-client/dist/socket.io.min.js"></script>
+	<script src="/bower_components/Processing.js/processing.min.js"></script>
+	<script>
+		var socket = io.connect('http://localhost');
+		var angle = 0;
+	</script>
+</head>
+<body>
+	<h1 id="dialogue"></h1>
+	<h1 id="angle"></h1>
+	<!--640 360-->
+	<video width="320" height="240" controls id="myVideo">
+		<source src="big_buck_bunny.mp4" type="video/mp4">
+		<!--<source src="movie.ogg" type="video/ogg">-->
+		Your browser does not support the video tag.
+	</video>
+	<canvas id="tree" data-processing-sources="tree.pde"></canvas>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
