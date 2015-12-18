@@ -155,17 +155,15 @@ void drawBoard() {
           y == ixyz[1] &&
           z == ixyz[2])
           if (player == 0) {
-            //println(' '+ x + ' '+ y + ' '+ z + ' ');
             if (x == 2 && z == 2) {
               if (y == 0) {
                 if(!max){
-                  println(12365489);
                   getmax.send();
 //                  println("Reponse Content: " + getmax.getContent());
 //                  println("Reponse Content-Length Header: " + getmax.getHeader("Content-Length"));
 //                  c.write("GET /max HTTP/1.0\r\n"); // Use the HTTP "GET" command to ask for a Web page
 //                  c.write("\r\n");
-                  println("y = 0");
+                  println("y = " + y);
                   max = true;
                   mid = false;
                   min = false;
@@ -182,7 +180,7 @@ void drawBoard() {
                   min = false;
                 }
                 fill(100, 0, 255, 200);
-                println("y =1");
+                println("y = " + y);
               }
               else {
                 if(!min){
@@ -194,7 +192,7 @@ void drawBoard() {
                   min = true;
                 }
                 fill(50, 255, 255, 200);
-                println("y =5  >" + y);
+                println("y = " + y);
               }
             }
             else {

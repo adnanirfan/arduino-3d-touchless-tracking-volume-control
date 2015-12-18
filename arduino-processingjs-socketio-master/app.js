@@ -11,9 +11,9 @@ io.set('log level',0);
 var socketio;
 app.use(express.static(__dirname + '/public'));
 
-require("serialport").list(function(err, ports) {
-  console.log(ports);
-});
+// require("serialport").list(function(err, ports) {
+//   console.log(ports);
+// });
 // var serialport = new SerialPort('COM5', {baudrate: 9600}, true ); // replace this address with your port address
 // serialport.on('open', function(){
 	// Now server is connected to Arduino
